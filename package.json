@@ -1,6 +1,6 @@
 {
   "name": "origin-forge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -13,9 +13,20 @@
     "watch": "parcel watch",
     "build": "parcel build && node scripts/build.js"
   },
-  "keywords": [],
+  "keywords": [
+    "cli",
+    "library generate cli"
+  ],
   "author": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maczyt/origin-forge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maczyt/origin-forge/issues"
+  },
+  "homepage": "https://github.com/maczyt/origin-forge",
   "dependencies": {
     "cac": "^6.7.14",
     "fs-extra": "^11.2.0",
