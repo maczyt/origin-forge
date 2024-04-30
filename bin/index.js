@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 
 var $8zHUo$cac = require("cac");
-var $8zHUo$process = require("process");
 var $8zHUo$ora = require("ora");
+var $8zHUo$process = require("process");
 var $8zHUo$path = require("path");
 var $8zHUo$memfs = require("memfs");
-var $8zHUo$fsextra = require("fs-extra");
 var $8zHUo$stream = require("stream");
 var $8zHUo$handlebars = require("handlebars");
+var $8zHUo$fsextra = require("fs-extra");
 
 
 function $parcel$interopDefault(a) {
@@ -16,7 +16,7 @@ function $parcel$interopDefault(a) {
 
 
 var $1572597be94ce13f$exports = {};
-$1572597be94ce13f$exports = JSON.parse('{"name":"origin-forge","version":"1.0.0","description":"","source":"src/index.ts","main":"dist/index.js","module":"dist/module.js","types":"dist/types.d.ts","scripts":{"watch":"parcel watch","build":"parcel build && node scripts/build.js"},"keywords":[],"author":"","license":"ISC","dependencies":{"cac":"^6.7.14","fs-extra":"^11.2.0","handlebars":"^4.7.8","memfs":"^4.9.1","ora":"5.4.1"},"devDependencies":{"@parcel/packager-ts":"2.12.0","@parcel/transformer-typescript-types":"2.12.0","@types/fs-extra":"^11.0.4","@types/node":"^20.12.7","parcel":"^2.12.0","typescript":">=3.0.0"}}');
+$1572597be94ce13f$exports = JSON.parse('{"name":"origin-forge","version":"1.0.0","description":"","source":"src/index.ts","main":"dist/index.js","module":"dist/module.js","types":"dist/types.d.ts","bin":{"of":"./bin/index.js"},"scripts":{"watch":"parcel watch","build":"parcel build && node scripts/build.js"},"keywords":[],"author":"","license":"MIT","dependencies":{"cac":"^6.7.14","fs-extra":"^11.2.0","handlebars":"^4.7.8","memfs":"^4.9.1","ora":"5.4.1"},"devDependencies":{"@parcel/packager-ts":"2.12.0","@parcel/transformer-typescript-types":"2.12.0","@types/fs-extra":"^11.0.4","@types/node":"^20.12.7","parcel":"^2.12.0","typescript":">=3.0.0"}}');
 
 
 
@@ -123,6 +123,7 @@ $882b6d93070905b3$var$cli.command("new <libraryName>", "create a library.").acti
     spinner.succeed("Successful");
 });
 $882b6d93070905b3$var$cli.help();
+$882b6d93070905b3$var$cli.version((0, (/*@__PURE__*/$parcel$interopDefault($1572597be94ce13f$exports))).version);
 $882b6d93070905b3$var$cli.parse();
 
 
