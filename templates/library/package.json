@@ -1,33 +1,21 @@
 {
-  "name": "origin-forge",
+  "name": "{{libraryName}}",
   "version": "1.0.0",
   "description": "",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/module.js",
   "types": "dist/types.d.ts",
-  "bin": {
-    "of": "./bin/index.js"
-  },
   "scripts": {
     "watch": "parcel watch",
-    "build": "parcel build && node scripts/build.js"
+    "build": "parcel build"
   },
   "keywords": [],
   "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "cac": "^6.7.14",
-    "fs-extra": "^11.2.0",
-    "handlebars": "^4.7.8",
-    "memfs": "^4.9.1",
-    "ora": "5.4.1"
-  },
+  "license": "ISC",
   "devDependencies": {
     "@parcel/packager-ts": "2.12.0",
     "@parcel/transformer-typescript-types": "2.12.0",
-    "@types/fs-extra": "^11.0.4",
-    "@types/node": "^20.12.7",
     "parcel": "^2.12.0",
     "typescript": ">=3.0.0"
   }
