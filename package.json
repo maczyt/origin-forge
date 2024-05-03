@@ -1,7 +1,7 @@
 {
   "name": "origin-forge",
   "version": "1.0.1",
-  "description": "",
+  "description": "creating a library scaffold generator",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/module.js",
