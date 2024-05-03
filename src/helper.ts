@@ -4,9 +4,12 @@ import { Transform } from "stream";
 import type { IDirent } from "memfs/lib/node/types/misc";
 import path from "path";
 import { compile } from "handlebars";
+const resolveGlobal = require("resolve-global");
 
-const templatePath = path.resolve(__dirname, "../templates");
-
+const templatePath = path.resolve(
+  resolveGlobal("origin-forge"),
+  "../../templates"
+);
 const mkdirRecursive = async (target: string) => {
   try {
     await vol.promises.mkdir(target, { recursive: true });
@@ -53,7 +56,6 @@ export const copyDir = async (temp: string, data: any) => {
 };
 
 export const writeToDisk = async (temp: string, dest: string) => {
-  console.log(temp, dest);
   async function copy(from: string, to: string) {
     await mkdirRecursive(to);
     const entries = await (vol.promises.readdir(from, {

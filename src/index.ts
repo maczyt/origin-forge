@@ -4,7 +4,7 @@ import pkg from "../package.json";
 import { create } from "./helper";
 import path from "path";
 
-const cli = cac(pkg.name);
+const cli = cac("of");
 
 cli
   .command("new <libraryName>", "create a library.")
